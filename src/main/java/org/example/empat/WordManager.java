@@ -9,7 +9,7 @@ public class WordManager {
         String longestWord = "";
 
         for (String word : words) {
-            if (word.length() > longestWord.length()) {
+            if (word.length() < longestWord.length()) {
                 longestWord = word;
             }
         }

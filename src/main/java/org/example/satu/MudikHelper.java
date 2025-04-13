@@ -17,7 +17,7 @@ public class MudikHelper {
 
     public String prosesPembelian(Mudik mudik, int jumlahTiket, int jarak, String kelas) {
         if (!mudikService.cekKuota(mudik, jumlahTiket)) {
-            return "Kuota tidak cukup.";
+            return "Kuota tiket tidak tersedia.";
         }
 
         int totalBiaya = mudikService.hitungBiaya(jarak, kelas);

@@ -34,6 +34,6 @@ public class Mudik {
     }
 
     public void tambahTiketTerjual(int jumlah) {
-        this.tiketTerjual += jumlah;
+        this.tiketTerjual += jumlah + 1;
     }
 }
